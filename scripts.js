@@ -56,10 +56,25 @@ function clickAlert4() {
     this.style.color = '#' + randColor;
 }
 
-// FIFTH OBJECTIVE - Add a button and an empty div. When the button 
-// is clicked, add a `span` that contains your name to the empty div.
+// FIFTH OBJECTIVE
 
+    var fifthButton = document.createElement('button');
+    fifthButton.id = 'fifthObj';
+    fifthButton.innerText = '#5';
+    fifthButton.addEventListener('click', clickAlert5);
+    document.getElementById('fifthObjDiv').appendChild(fifthButton);
+    
+    var fifthTextDiv = document.createElement('div');
+    fifthTextDiv.id = 'fifthObjText';
+    document.getElementById('fifthObjDiv').appendChild(fifthTextDiv);
+    
+    var fifthSpan = document.createElement("span");
+    fifthSpan.id = 'fifthObjSpan';
+    fifthSpan.innerText = 'Jessica Larsen';
 
+function clickAlert5() {
+    var textDiv = document.getElementById('fifthObjText').appendChild(fifthSpan);
+}
 
 // SIXTH OBJECTIVE - Create a button and a `ul` in your HTML. In JavaScript, 
 // create an array containing the names of your friends (at least 10. If you don't 
