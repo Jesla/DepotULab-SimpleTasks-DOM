@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     firstButton.innerText = '#1';
     firstButton.addEventListener('click', clickAlert1);
     document.getElementById('firstObjDiv').appendChild(firstButton);
-});
 
 function clickAlert1() {
     alert('Objective #1 Down!');
@@ -99,3 +98,4 @@ function clickAlert5() {
 
 
 
+});
