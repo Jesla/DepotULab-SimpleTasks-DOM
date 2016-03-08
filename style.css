@@ -1,0 +1,47 @@
+#firstObjDiv {
+    width: 100%;
+    margin: auto;
+}
+
+#firstObj {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: slategray;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    font-size: 15px;   
+}
+
+#secondObj {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: slategray;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    font-size: 15px;   
+}
+
+#secondObjTextBox {
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+}
+
+#thirdObjDiv {
+    width: 150px;
+    height: 50px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-left: 40%;
+}
+
+#fourthObjDiv {
+    font-size: 20px;
+    margin-left: 37%;
+}
