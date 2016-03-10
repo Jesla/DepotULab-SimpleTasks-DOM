@@ -74,40 +74,20 @@ function clickAlert5() {
     var textDiv = document.getElementById('fifthObjText').appendChild(fifthSpan);
 }
 
-// SIXTH OBJECTIVE - Create a button and a `ul` in your HTML. In JavaScript, 
-// create an array containing the names of your friends, at least 10. When the button 
-// is clicked, add each friend's name as an `li` to the `ul` on the page.
+// SIXTH OBJECTIVE
 
-// FIRST APPROACH - UNSUCCESSFULL
+var friendsArray = ["Stacy", "JD", "Jared", "Brian", "Kinley", "Blair", "Stephanie", "Susan", "Jim", "Mark"];
+var sixthObjClick = addEventListener('click', clickAlert6);
 
-// var friendsArray = ["Stacy", "JD", "Jared", "Brian", "Kinley", "Blair", "Stephanie", "Susan", "Jim", "Mark"];
-// var sixthObjClick = addEventListener('click', clickAlert6);
+function clickAlert6() {
 
-// function clickAlert6() {
-//     var sixthObjList = document.createElement('li');
-//     sixthObjList.class = 'sixthLiList';
+    for (var i = 0; i < friendsArray.length; i++) {
+        var friendList = friendsArray[i];
+        var sixthObjList = document.createElement('li');
+        sixthObjList.class = 'sixthLiList';
+        sixthObjList.innerHTML = friendList;
+        document.getElementById('sixthUl').appendChild(sixthObjList);
+    }
+}
 
-//     for (var i = 0; i < friendsArray.length; i++) {
-//         var friendList = (friendsArray[i]);
-//         document.getElementById('sixthUl').appendChild(sixthObjList);
-//         document.getElementsByClassName('sixthObjList').appendChild(sixthObjList[friendList]);
-//     }
-// }
-
-
-// SECOND APPROACH - UNSUCCESSFULL
-
-// var friendsArray = ["Stacy", "JD", "Jared", "Brian", "Kinley", "Blair", "Stephanie", "Susan", "Jim", "Mark"];
-//    var sixthObjButton = document.getElementById('sixthObjButton');
-//    sixthObjButton.onclick = function() {
-       
-//        var theList = document.getElementById('sixthUl');
-//         for(var i = 0; i < friendsArray.length; i++){
-//            var sixthLiList = document.createElement('li');
-//            sixthLiList.appendChild(document.createTextNode(sixthLiList));
-//            theList.appendChild(sixthLiList);
-//         };
-//    }
-   
-   
    }); // THESE ARE THE FINAL CLOSE TAGS FOR THE PAGE - DO NOT REMOVE
